@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n-title="meta.title">Galápagos Restaurant · Ecuadorian & Central American food in Morristown, NJ</title>
+    <meta name="description" content="Ecuadorian and Central American restaurant at 98 Speedwell Ave, Morristown NJ. Seafood, ceviche, guatita, típicos and $2 pupusas. Order online for pickup." />
+    <meta name="theme-color" content="#a3201f" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="sitemap" type="application/xml" href="./sitemap.xml" />
+    <link rel="canonical" href="https://codercoaster.github.io/galapagos-site/" />
+    <meta name="robots" content="index, follow" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <meta property="og:type" content="restaurant.restaurant" />
+    <meta property="og:site_name" content="Galápagos Restaurant" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="es_US" />
+    <meta property="og:url" content="https://codercoaster.github.io/galapagos-site/" />
+    <meta property="og:title" content="Galápagos Restaurant · Morristown, NJ" />
+    <meta property="og:description" content="Ecuadorian and Central American food on Speedwell Ave. Seafood, típicos and $2 pupusas. Order online for pickup." />
+    <meta property="og:image" content="https://codercoaster.github.io/galapagos-site/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="The red and yellow awning of Galápagos Restaurant on Speedwell Ave" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Galápagos Restaurant · Morristown, NJ" />
+    <meta name="twitter:description" content="Ecuadorian and Central American food on Speedwell Ave. Seafood, típicos and $2 pupusas. Order online for pickup." />
+    <meta name="twitter:image" content="https://codercoaster.github.io/galapagos-site/og-image.jpg" />
+    <meta name="twitter:image:alt" content="The red and yellow awning of Galápagos Restaurant on Speedwell Ave" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Galápagos Restaurant",
+      "url": "https://codercoaster.github.io/galapagos-site/",
+      "image": "https://codercoaster.github.io/galapagos-site/og-image.jpg",
+      "telephone": "+1-973-285-1224",
+      "servesCuisine": ["Ecuadorian", "Salvadoran", "Honduran", "Seafood"],
+      "priceRange": "$10–20",
+      "address": { "@type": "PostalAddress", "streetAddress": "98 Speedwell Ave", "addressLocality": "Morristown", "addressRegion": "NJ", "postalCode": "07960", "addressCountry": "US" },
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"], "opens": "10:30", "closes": "22:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday", "Saturday"], "opens": "10:30", "closes": "23:30" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "10:00", "closes": "21:00" }
+      ],
+      "acceptsReservations": false,
+      "hasMenu": "https://codercoaster.github.io/galapagos-site/order.html"
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Young+Serif&family=Yellowtail&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script>
+      (function () {
+        var d = document.documentElement;
+        try { var l = localStorage.getItem('galapagos.lang'); var s = new URLSearchParams(location.search), q = (s.get('lang') || '').toLowerCase().slice(0, 2); if (q !== 'es' && q !== 'en') q = s.has('es') ? 'es' : s.has('en') ? 'en' : ''; if (q === 'es' || (!q && (l === 'es' || (!l && /^es/i.test(navigator.language))))) d.classList.add('i18n-pending'); } catch (e) {}
+        if (!matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('is-intro');
+      })();
+    </script>
+    <link rel="preload" as="image" href="./img/guatita.webp" />
+  </head>
+  <body>
+    <a class="sr-only" href="#main" data-i18n="skip">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap site-header__bar">
+        <a class="logo" href="./" aria-label="Galápagos Restaurant">
+          <svg class="logo__mark" viewBox="0 0 64 40" aria-hidden="true"><use href="#turtle" /></svg>
+          <span class="logo__word">Galápagos<small>Restaurant · Pupusas</small></span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <a href="./order.html" data-i18n="nav.menu">Menu</a>
+          <a href="#mariscos" data-i18n="nav.seafood">Seafood</a>
+          <a href="#pupusas" data-i18n="nav.pupusas">Pupusas</a>
+          <a href="#visit" data-i18n="nav.visit">Visit</a>
+        </nav>
+        <div class="header-actions">
+          <button type="button" class="lang" data-lang-toggle><span data-lang="en">EN</span><span data-lang="es">ES</span></button>
+          <a class="btn btn--red btn--sm header-cta" href="./order.html"><span class="hide-sm" data-i18n="cta.order">Order online</span><span class="show-sm" data-i18n="cta.orderShort">Order</span></a>
+          <button type="button" class="icon-btn cart-btn" data-open-cart data-cart-target data-i18n-attr="aria-label:cart.open" aria-label="Open your order">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.1a2 2 0 0 1-2 1.9H8.2a2 2 0 0 1-2-1.9L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+            <span class="cart-btn__count tnum">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- HERO: the awning -->
+      <section class="hero">
+        <div class="bulbs" aria-hidden="true" data-bulbs></div>
+        <div class="awning">
+          <div class="wrap awning__inner">
+            <div class="hero__copy">
+              <p class="awning__kicker" data-hero-fade data-i18n="hero.kicker">Ecuadorian &amp; Central American cuisine</p>
+              <h1 class="awning__title">
+                <span class="line"><span data-i18n="hero.l1">The best</span></span>
+                <span class="line"><span class="script" data-i18n="hero.l2">seafood</span></span>
+                <span class="line"><span data-i18n="hero.l3">on Speedwell.</span></span>
+              </h1>
+              <p class="hero__lede" data-hero-fade><span class="hero__lede-long" data-i18n="hero.lede">Ceviche, Galápagos-style shrimp, guatita, seco de chivo and $2 pupusas, made to order in Morristown.</span> <span data-i18n="hero.lede2">Order ahead and pick it up in about 20 minutes.</span></p>
+              <div class="hero__ctas" data-hero-fade>
+                <a class="btn btn--yellow" href="./order.html"><span data-i18n="hero.start">Start your order</span> <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                <a class="btn btn--ghost-light" href="#carta" data-i18n="hero.menu">See the menu</a>
+              </div>
+              <div class="hero__meta" data-hero-fade>
+                <span class="open-dot" data-open-status>Open now</span>
+                <a class="hero__phone tnum" href="tel:+19732851224">(973) 285-1224</a>
+              </div>
+            </div>
+            <div class="hero__plate" aria-hidden="true">
+              <img src="./img/guatita.webp" alt="" width="1100" height="737" data-hero-plate />
+            </div>
+          </div>
+          <div class="awning__band">
+            <div class="wrap"><span data-i18n="hero.band">Restaurant · Pupusas · 98 Speedwell Ave</span></div>
+          </div>
+          <div class="awning__scallop" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <!-- SEAFOOD + NEON WINDOW -->
+      <section class="section seafood" id="mariscos">
+        <div class="wrap seafood__grid">
+          <div class="neon" data-neon role="img" aria-label="Lo mejor en mariscos · Ecuatorian cuisine">
+            <div class="neon__glass">
+              <span class="neon__line neon--yellow">Lo mejor en:</span>
+              <span class="neon__line neon--yellow neon__big">Mariscos</span>
+              <span class="neon__line neon--blue">Ecuatorian</span>
+              <span class="neon__line neon--red">Cuisine</span>
+              <svg class="neon__turtle" viewBox="0 0 64 40" aria-hidden="true"><use href="#turtle-neon" /></svg>
+              <span class="neon__phone neon--red tnum">973-285-1224</span>
+            </div>
+          </div>
+          <div class="seafood__copy">
+            <span class="eyebrow" data-i18n="neon.eyebrow">Lo mejor en mariscos</span>
+            <h2 class="h2" data-reveal data-i18n="neon.title">Seafood is the house specialty</h2>
+            <p class="lede" data-i18n="neon.lede">Snapper fried whole or steamed, tilapia catracha, ceviche and six ways with shrimp. Every plate comes with rice and tostones.</p>
+            <ul class="leaders" data-seafood-list></ul>
+            <a class="btn btn--ghost" href="./order.html#mariscos"><span data-i18n="neon.all">All seafood</span> <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAVORITES: the three plates -->
+      <section class="section favs" id="favoritos">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="eyebrow" data-i18n="favs.eyebrow">De la casa</span>
+            <h2 class="h2" data-reveal data-i18n="favs.title">Three plates to start with</h2>
+            <p class="lede" data-i18n="favs.lede">Classics from Ecuador and Central America, as they come out of our kitchen.</p>
+          </div>
+          <div class="plates" data-plates></div>
+        </div>
+      </section>
+
+      <!-- PUPUSAS -->
+      <section class="section pupusas" id="pupusas">
+        <div class="wrap pupusas__grid">
+          <div class="pupusas__price">
+            <span class="eyebrow eyebrow--ink" data-i18n="pup.eyebrow">Pupusas salvadoreñas</span>
+            <h2 class="h2" data-reveal data-i18n="pup.title">Pupusas, made by hand</h2>
+            <div class="bigprice"><strong class="tnum">$2</strong><span data-i18n="pup.each">each</span></div>
+            <p class="lede" data-i18n="pup.lede">Corn dough stuffed and griddled to order. Get a few of each, they go fast.</p>
+            <a class="btn" href="./order.html#pupusas" data-i18n="pup.order">Order pupusas</a>
+          </div>
+          <div class="pupusas__list">
+            <ul class="leaders leaders--big" data-pupusa-list></ul>
+            <h3 class="pupusas__sub" data-i18n="pup.baleadas">Baleadas hondureñas</h3>
+            <ul class="leaders" data-baleada-list></ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- LA CARTA -->
+      <section class="section carta" id="carta">
+        <div class="wrap">
+          <div class="section-head section-head--row">
+            <div>
+              <span class="eyebrow" data-i18n="carta.eyebrow">La carta</span>
+              <h2 class="h2" data-reveal data-i18n="carta.title">The menu, as printed</h2>
+            </div>
+            <p class="lede" data-i18n="carta.lede">Pick a section. Everything here can be ordered online for pickup.</p>
+          </div>
+          <div class="tabs" role="tablist" data-i18n-attr="aria-label:carta.tabs" data-tabs><span class="tabs__pill" data-tabs-pill></span></div>
+          <div class="carta__panel" role="tabpanel" data-carta-panel></div>
+          <div class="carta__cta">
+            <a class="btn btn--red" href="./order.html"><span data-i18n="carta.full">Full menu &amp; ordering</span> <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- VISIT -->
+      <section class="section visit" id="visit">
+        <div class="wrap visit__grid">
+          <div class="visit__info">
+            <span class="eyebrow eyebrow--light" data-i18n="visit.eyebrow">Visítenos</span>
+            <h2 class="h2" data-reveal data-i18n="visit.title">Under the red awning</h2>
+            <address>98 Speedwell Ave<br />Morristown, NJ 07960</address>
+            <p class="lede" data-i18n="visit.lede">A few blocks up Speedwell Ave from the Morristown Green. Dine in, take out or order ahead.</p>
+            <div class="visit__links">
+              <a class="btn btn--yellow" href="https://www.google.com/maps/search/?api=1&query=Galapagos+Restaurant+98+Speedwell+Ave+Morristown+NJ+07960" target="_blank" rel="noopener" data-i18n="visit.directions">Get directions</a>
+              <a class="btn btn--ghost-light tnum" href="tel:+19732851224">(973) 285-1224</a>
+            </div>
+            <h3 class="visit__h3" data-i18n="visit.hours">Hours</h3>
+            <ul class="hours tnum" data-hours></ul>
+          </div>
+          <div class="visit__media">
+            <figure class="visit__photo"><img src="./img/storefront.webp" width="1000" height="750" loading="lazy" data-i18n-attr="alt:visit.photo" alt="Galápagos Restaurant storefront on Speedwell Ave" /></figure>
+            <div class="map">
+              <iframe data-i18n-attr="title:visit.map" title="Map to Galápagos Restaurant" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Galapagos+Restaurant,+98+Speedwell+Ave,+Morristown,+NJ+07960&z=16&output=embed"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="awning__scallop awning__scallop--top" aria-hidden="true"></div>
+      <div class="wrap footer__inner">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <a class="logo logo--light" href="./"><svg class="logo__mark" viewBox="0 0 64 40" aria-hidden="true"><use href="#turtle" /></svg><span class="logo__word">Galápagos<small>Restaurant · Pupusas</small></span></a>
+            <p data-i18n="footer.blurb">Ecuadorian and Central American cooking on Speedwell Ave, Morristown.</p>
+          </div>
+          <nav aria-label="Footer"><h4 data-i18n="footer.eat">Eat</h4><a href="./order.html" data-i18n="cta.order">Order online</a><a href="./order.html#mariscos" data-i18n="nav.seafood">Seafood</a><a href="./order.html#pupusas" data-i18n="nav.pupusas">Pupusas</a><a href="#carta" data-i18n="nav.menu">Menu</a></nav>
+          <nav aria-label="Visit"><h4 data-i18n="footer.visit">Visit</h4><a href="https://www.google.com/maps/search/?api=1&query=Galapagos+Restaurant+98+Speedwell+Ave+Morristown+NJ+07960" target="_blank" rel="noopener">98 Speedwell Ave</a><a href="tel:+19732851224" class="tnum">(973) 285-1224</a><a href="#visit" data-i18n="visit.hours">Hours</a></nav>
+        </div>
+        <div class="footer__legal">
+          <span data-i18n="footer.legal">Consuming raw or undercooked meats, seafood or eggs may increase your risk of foodborne illness.</span>
+          <span>© <span data-year></span> Galápagos Restaurant · Morristown, NJ</span>
+          <span class="footer__credit"><span data-i18n="footer.made">Made by</span> <a href="https://www.codercoaster.com/?utm_source=galapagos" target="_blank" rel="noopener">Codercoaster</a></span>
+        </div>
+      </div>
+    </footer>
+
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+      <!-- the turtle from the neon sign in the window -->
+      <symbol id="turtle" viewBox="0 0 64 40">
+        <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+          <path d="M15 28C15 15.5 23.5 7 35 7s20 8.5 21 21Z" stroke="oklch(62% 0.13 232)" fill="oklch(62% 0.13 232 / .14)" />
+          <path d="M25 27.5C25.5 19 29 13 34 10M35 27.5V8M45 27.5C44.5 19 41.5 13 37 10" stroke="oklch(62% 0.13 232)" stroke-width="2.4" />
+          <path d="M11 28h48l4 3" stroke="oklch(62% 0.13 232)" />
+          <path d="M16 23c-4 .5-8-1.5-10-5-1.5-2.6.4-5.2 3.2-4.6 3.3.7 5.4 4 7.3 7.4" stroke="oklch(76% 0.15 85)" />
+          <path d="M21 29l-2.5 6h5M50 29l2 6h-5" stroke="oklch(76% 0.15 85)" />
+        </g>
+        <circle cx="8.6" cy="16" r="1.3" fill="oklch(22% 0.02 30)" />
+      </symbol>
+      <symbol id="turtle-neon" viewBox="0 0 64 40">
+        <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8">
+          <path d="M15 28C15 15.5 23.5 7 35 7s20 8.5 21 21Z" stroke="var(--nt-blue)" />
+          <path d="M25 27.5C25.5 19 29 13 34 10M35 27.5V8M45 27.5C44.5 19 41.5 13 37 10" stroke="var(--nt-blue)" />
+          <path d="M11 28h48l4 3" stroke="var(--nt-blue)" />
+          <path d="M16 23c-4 .5-8-1.5-10-5-1.5-2.6.4-5.2 3.2-4.6 3.3.7 5.4 4 7.3 7.4M21 29l-2.5 6h5M50 29l2 6h-5" stroke="var(--nt-yellow)" />
+        </g>
+      </symbol>
+    </svg>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

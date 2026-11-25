@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://codercoaster.github.io/galapagos-site/sitemap.xml
